@@ -1,0 +1,4 @@
+Rendering of Template Files:
+
+staticjinja (developed with version == 0.3.0)
+    -Based on jinja2 python templating language

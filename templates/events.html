@@ -1,0 +1,273 @@
+{% extends '/_base_template/base_layout.html' %}
+{% block title %}Events{% endblock %}
+
+{% block extraStuff %}
+    <!--FULLSCREEN SLIDER CSS-->
+    <link rel="stylesheet" href="css/slider-style.css" />
+    <!--END FULLSCREEN SLIDER CSS -->
+
+    <!--EVENT SLIDER CSS-->
+    <link rel="stylesheet" type="text/css" href="css/flickity.css" />
+    <!--END EVENT SLIDER CSS-->
+
+    <!--FORM CSS-->
+    <link rel="stylesheet" href="css/set1.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+    <script src="js/modernizr.custom.63321.js"></script>
+    <link rel="stylesheet" href="css/custom-select.css" />
+    <link rel="stylesheet" href="css/checkboxes.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <!--END FORM CSS-->
+
+    <!--REQUIRED FILES FOR CALENDAR-->
+    <link rel='stylesheet' href='css/fullcalendar.css' />
+    <script src='js/moment.min.js'></script>
+    <script src='js/fullcalendar.js'></script>
+    <script type='text/javascript' src='js/gcal.js'></script>
+    <!--END REQUIRED FILES FOR CALENDAR-->
+
+    <script>
+      $(document).ready(function() {
+        $('#calendar').fullCalendar({
+          googleCalendarApiKey: 'AIzaSyBI9R_bzjYSX8tSjpWDWQIXl0i-TTzXgvQ',
+          events: {
+            googleCalendarId: 'a6e1gbgph9fn4t443rnp79hdlj0p0ntu@import.calendar.google.com'
+          },
+          aspectRatio: 2.5
+        });
+      });
+    </script>
+{% endblock %}
+
+{% block navContent %}
+      <nav id="cd-vertical-nav">
+        <ul>
+          <li>
+            <a class="js-scroll-trigger" href="#upcoming" class="page-scroll">
+              <span class="cd-dot"></span>
+              <span class="cd-label">Upcoming Events</span>
+            </a>
+          </li>
+          <li>
+    				<a class="js-scroll-trigger" href="#ideas" class="page-scroll">
+    					<span class="cd-dot"></span>
+    					<span class="cd-label">Event Ideas</span>
+    				</a>
+    			</li>
+          <li>
+    				<a class="js-scroll-trigger" href="#fullCal" class="page-scroll">
+    					<span class="cd-dot"></span>
+    					<span class="cd-label">Full Calendar</span>
+    				</a>
+    			</li>
+        </ul>
+      </nav>
+{% endblock %}
+
+{% block content %}
+      <main>
+        <div class="slider-container single_image event-header">
+          <div class="slider">
+            <div class="slide slide-0 active">
+              <div class="slide__bg"></div>
+              <div class="slide__content">
+                <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                  <path class="slide__overlay-path" d="M0,0 95,0 400,405 0,405" />
+                </svg>
+                <div class="slide__text">
+                  <h2 class="slide__text-heading">Events</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-section section-purple" id="upcoming">
+          <h2><span class="special-first-letter">U</span>pcoming Events</h2>
+          <p>
+            <i>So you can stay informed and up to date with us</i>
+          </p>
+          <hr>
+          <div class="event-slider">
+            <div class="event">
+              <img class="event-image" src="img/event1.jpg" alt="5K Race Event Image"/>
+              <div class="event-text">
+                <h2>5K For Clothes</h2>
+                <p>
+                  Come out and have fun running or walking a 5K. It only costs a piece of clothing to enter!
+                </p>
+                <button onclick="location.href='https://ccconnections.info/booked/Web/?'" class="button button--rayen button--border-medium button--text-thick button--text-upper button--size-s event-button" data-text="Sign Up Now!"><span>Sign Up Now!</span></button>
+              </div>
+            </div>
+            <div class="event">
+              <img class="event-image" src="img/event2.jpg" alt="Rain Coats on Wood Event Image"/>
+              <div class="event-text">
+                <h2>Rain, Rain, Go Away</h2>
+                <p>
+                  Come on out to our store and donate any rain jackets or rain gear you don't need anymore. It's for a good cause!
+                </p>
+                <button onclick="location.href='https://ccconnections.info/booked/Web/?'" class="button button--rayen button--border-medium button--text-thick button--text-upper button--size-s event-button" data-text="Sign Up Now!"><span>Sign Up Now!</span></button>
+              </div>
+            </div>
+            <div class="event">
+              <img class="event-image" src="img/event3.jpg" alt="Kid tying his shoes event image"/>
+              <div class="event-text">
+                <h2>A Mile In My Shoes</h2>
+                <p>
+                  Another fun way to be with the community. Shoes are preferred but any clothes will also work for the entry fee.
+                </p>
+                <button onclick="location.href='https://ccconnections.info/booked/Web/?'" class="button button--rayen button--border-medium button--text-thick button--text-upper button--size-s event-button" data-text="Sign Up Now!"><span>Sign Up Now!</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-section section-white" id="ideas">
+          <h2><span class="special-first-letter">E</span>vent Ideas</h2>
+          <p>
+            <i>Input from our community in any form is greatly appreciated</i>
+          </p>
+          <hr>
+          <div class="join-form-area project-page">
+            <form name="request" action="php/events.php" autocomplete="off" method="POST" class="ac-custom ac-checkbox ac-cross">
+              <fieldset>
+                <legend>
+                  <span class="special-first-letter">C</span>ontact Info
+                </legend>
+                <span class="input input--kaede flexible-input">
+                  <input class="input__field input__field--kaede" type="text" id="fname" name="fname" required />
+                  <label class="input__label input__label--kaede" for="fname">
+                    <span class="input__label-content input__label-content--kaede">*First Name</span>
+                  </label>
+                </span>
+                <span class="input input--kaede flexible-input">
+                  <input class="input__field input__field--kaede" type="text" id="lname" name="lname" required />
+                  <label class="input__label input__label--kaede" for="lname">
+                    <span class="input__label-content input__label-content--kaede">*Last Name</span>
+                  </label>
+                </span>
+                <span class="input input--kaede">
+                  <input class="input__field input__field--kaede" type="email" id="email" name="email" required />
+                  <label class="input__label input__label--kaede" for="email">
+                    <span class="input__label-content input__label-content--kaede">*Email Address</span>
+                  </label>
+                </span>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <span class="special-first-letter">E</span>vent idea
+                </legend>
+                <span class="input input--kaede">
+                  <input class="input__field input__field--kaede" type="text" id="name" name="name" required />
+                  <label class="input__label input__label--kaede" for="name">
+                    <span class="input__label-content input__label-content--kaede">*Event Name</span>
+                  </label>
+                </span>
+                <span class="input input--kaede">
+                  <input class="input__field input__field--kaede" type="text" id="idea" name="idea" required />
+                  <label class="input__label input__label--kaede" for="idea">
+                    <span class="input__label-content input__label-content--kaede">*Event Description</span>
+                  </label>
+                </span>
+                <div class="docs-datepicker">
+                  <div class="input-group">
+                    <input type="text" class="form-control docs-date" name="enddate" placeholder="*Prospective End Date" required>
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default docs-datepicker-trigger" disabled>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                      </button>
+                    </span>
+                  </div>
+                  <div class="docs-datepicker-container"></div>
+                </div>
+                <div class="docs-datepicker">
+                  <div class="input-group">
+                    <input type="text" class="form-control docs-date" name="startdate" placeholder="*Prospective Start Date" required>
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default docs-datepicker-trigger" disabled>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                      </button>
+                    </span>
+                  </div>
+                  <div class="docs-datepicker-container"></div>
+                </div>
+              </fieldset>
+              <button class="button button--rayen button--border-medium button--text-thick button--text-upper button--size-s" data-text="Submit Idea"><span>Submit Idea</span></button>
+              <button type="reset" class="button button--rayen button--border-medium button--text-thick button--text-upper button--size-s" data-text="Reset Form"><span>Reset Form</span></button>
+            </form>
+          </div>
+        </div>
+        <div class="main-section section-yellow" id="fullCal">
+          <h2><span class="special-first-letter">F</span>ull Calendar</h2>
+          <p>
+            <i>In case you would like to see past, present, and future events</i>
+          </p>
+          <hr>
+          <div id="calendar"></div>
+        </div>
+      </main>
+{% endblock %}
+
+{% block script %}
+{{ super() }}
+    <script src="js/flickity.pkgd.js"></script>
+    <!--EVENT SLIDER JS-->
+    <script type="text/javascript">
+      $('.event-slider').flickity({
+        // options
+        wrapAround: true
+      });
+    </script>
+    <script type="text/javascript" src="js/jquery.dropdown.js"></script>
+    <script src="js/svgcheckbx.js"></script>
+    <script type="text/javascript">
+
+      $( function() {
+
+        $( '#cd-dropdown' ).dropdown();
+
+      });
+
+    </script>
+
+    <script>
+			(function() {
+				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+				if (!String.prototype.trim) {
+					(function() {
+						// Make sure we trim BOM and NBSP
+						var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+						String.prototype.trim = function() {
+							return this.replace(rtrim, '');
+						};
+					})();
+				}
+
+				[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+					// in case the input is already filled..
+					if( inputEl.value.trim() !== '' ) {
+						classie.add( inputEl.parentNode, 'input--filled' );
+					}
+
+					// events:
+					inputEl.addEventListener( 'focus', onInputFocus );
+					inputEl.addEventListener( 'blur', onInputBlur );
+				} );
+
+				function onInputFocus( ev ) {
+					classie.add( ev.target.parentNode, 'input--filled' );
+				}
+
+				function onInputBlur( ev ) {
+					if( ev.target.value.trim() === '' ) {
+						classie.remove( ev.target.parentNode, 'input--filled' );
+					}
+				}
+			})();
+		</script>
+
+    <script src="js/datepicker.js"></script>
+    <script src="js/main.js"></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js'></script>
+    <script  src="js/input-mask.js"></script>
+
+{% endblock %}

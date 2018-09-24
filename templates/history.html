@@ -1,0 +1,107 @@
+{% extends '/_base_template/base_layout.html' %}
+{% block title %}History{% endblock %}
+
+{% block extraStuff %}
+    <!--FULLSCREEN SLIDER CSS-->
+    <link rel="stylesheet" href="css/slider-style.css" />
+    <!--END FULLSCREEN SLIDER CSS -->
+{% endblock %}
+
+{% block navContent %}
+      <nav id="cd-vertical-nav">
+        <ul>
+          <li>
+            <a class="js-scroll-trigger" href="#timeline" class="page-scroll">
+              <span class="cd-dot"></span>
+              <span class="cd-label">Timeline</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+{% endblock %}
+
+{% block content %}
+      <main>
+        <div class="slider-container single_image history-header">
+          <div class="slider">
+            <div class="slide slide-0 active">
+              <div class="slide__bg"></div>
+              <div class="slide__content">
+                <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                  <path class="slide__overlay-path" d="M0,0 95,0 400,405 0,405" />
+                </svg>
+                <div class="slide__text">
+                  <h2 class="slide__text-heading">Our History</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="timeline" class="main-section section-white">
+          <h2><span class="special-first-letter">T</span>imeline</h2>
+          <p>
+            <i>A Brief History Of Our Business</i>
+          </p>
+          <hr>
+          <div class="timeline">
+            <div class="timeline-item">
+              <img class="timeline-image" src="img/beginnings.jpg" alt="First picture of out store"/>
+              <div class="timeline-text">
+                <h2 class="timeline-text-heading">Our Humble Beginnings</h2>
+                <i class="timeline-date">JAN. 07, 2008</i>
+                <p class="timeline-text-descr">
+                  It all started here, 10 long and successful years ago with two people who ultimately wanted to help out in their community. The business grew with time and blossomed into what it is today.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <img class="timeline-image" src="img/first_event.png" alt="Scisscors cutting red ribbon for first event"/>
+              <div class="timeline-text">
+                <h2 class="timeline-text-heading">Our First Event</h2>
+                <i class="timeline-date">FEB. 15, 2008</i>
+                <p class="timeline-text-descr">
+                  Our first event in which we got the community involved in our idea feels just like yesterday, and every event since then still feels like the first because of our loyal and supportive team.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <img class="timeline-image" src="img/donation_milestone.jpg" alt="Stack of clothes for first donations milestone"/>
+              <div class="timeline-text">
+                <h2 class="timeline-text-heading">Our First Milestone in Donations</h2>
+                <i class="timeline-date">DEC. 20, 2009</i>
+                <p class="timeline-text-descr">
+                  We would have never expected to receive the vast amount of donations we did this early in the business. It just goes to show that a community can do great things once it is brought together under a purpose.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <img class="timeline-image" src="img/business_expansion.png" alt="Empty classroom made for our business expansion"/>
+              <div class="timeline-text">
+                <h2 class="timeline-text-heading">Our Business Expansion</h2>
+                <i class="timeline-date">AUG. 01, 2013</i>
+                <p class="timeline-text-descr">
+                  To compensate for the vast amount of help and donations we were receving, we had to expand our business. We added a multipurpose room to help raise more money, and expanded the store area in our main building.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <img class="timeline-image" src="img/volunteer_milestone.jpg" alt="Coloful raised hands symbolizing a milestone in volunteers"/>
+              <div class="timeline-text">
+                <h2 class="timeline-text-heading">Our First Milestone in Total Volunteers</h2>
+                <i class="timeline-date">MAY. 18, 2016</i>
+                <p class="timeline-text-descr">
+                  When we broke 500 volunteers, we were ectastic and extremely proud with the work of the community. This was a milestone for the community itself as much as it was one for us. With a cause, a group of people can do almost anything.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-image">
+                <p>
+                  Add To Our Story!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+{% endblock %}

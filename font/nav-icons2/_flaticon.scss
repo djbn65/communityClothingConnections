@@ -1,0 +1,87 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 25/02/2018 16:20
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-eye-outline:before { content: "\f100"; }
+.flaticon-log-in:before { content: "\f101"; }
+.flaticon-web:before { content: "\f102"; }
+.flaticon-edit-document:before { content: "\f103"; }
+.flaticon-donate:before { content: "\f104"; }
+.flaticon-responsive:before { content: "\f105"; }
+.flaticon-round:before { content: "\f106"; }
+.flaticon-meeting:before { content: "\f107"; }
+.flaticon-presentation:before { content: "\f108"; }
+.flaticon-clock-1:before { content: "\f109"; }
+.flaticon-shop:before { content: "\f10a"; }
+.flaticon-team:before { content: "\f10b"; }
+.flaticon-logout:before { content: "\f10c"; }
+.flaticon-information:before { content: "\f10d"; }
+.flaticon-customer-service:before { content: "\f10e"; }
+.flaticon-help-button:before { content: "\f10f"; }
+.flaticon-wall-clock:before { content: "\f110"; }
+.flaticon-clock:before { content: "\f111"; }
+.flaticon-confirm-schedule:before { content: "\f112"; }
+.flaticon-calendar:before { content: "\f113"; }
+.flaticon-padlock:before { content: "\f114"; }
+.flaticon-curriculum-vitae:before { content: "\f115"; }
+.flaticon-contract:before { content: "\f116"; }
+.flaticon-speedometer:before { content: "\f117"; }
+    
+    $font-Flaticon-eye-outline: "\f100";
+    $font-Flaticon-log-in: "\f101";
+    $font-Flaticon-web: "\f102";
+    $font-Flaticon-edit-document: "\f103";
+    $font-Flaticon-donate: "\f104";
+    $font-Flaticon-responsive: "\f105";
+    $font-Flaticon-round: "\f106";
+    $font-Flaticon-meeting: "\f107";
+    $font-Flaticon-presentation: "\f108";
+    $font-Flaticon-clock-1: "\f109";
+    $font-Flaticon-shop: "\f10a";
+    $font-Flaticon-team: "\f10b";
+    $font-Flaticon-logout: "\f10c";
+    $font-Flaticon-information: "\f10d";
+    $font-Flaticon-customer-service: "\f10e";
+    $font-Flaticon-help-button: "\f10f";
+    $font-Flaticon-wall-clock: "\f110";
+    $font-Flaticon-clock: "\f111";
+    $font-Flaticon-confirm-schedule: "\f112";
+    $font-Flaticon-calendar: "\f113";
+    $font-Flaticon-padlock: "\f114";
+    $font-Flaticon-curriculum-vitae: "\f115";
+    $font-Flaticon-contract: "\f116";
+    $font-Flaticon-speedometer: "\f117";

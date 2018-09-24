@@ -1,0 +1,33 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 22/12/2017 15:45
+  	*/
+
+@font-face {
+  font-family: "Arrows";
+  src: url("../font/arrows/Flaticon.eot");
+  src: url("../font/arrows/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../font/arrows/Flaticon.woff") format("woff"),
+       url("../font/arrows/Flaticon.ttf") format("truetype"),
+       url("../font/arrows/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Arrows";
+    src: url("../font/arrows/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-left-arrow:before { content: "\f100"; }
+.flaticon-arrow-point-to-right:before { content: "\f101"; }

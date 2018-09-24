@@ -1,0 +1,410 @@
+{% extends '/_base_template/base_layout.html' %}
+{% block title %}Team{% endblock %}
+
+{% block extraStuff %}
+    <!--FULLSCREEN SLIDER CSS-->
+    <link rel="stylesheet" href="css/slider-style.css" />
+    <!--END FULLSCREEN SLIDER CSS -->
+
+    <!--FORM CSS-->
+    <link rel="stylesheet" href="css/set1.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+    <script src="js/modernizr.custom.63321.js"></script>
+    <link rel="stylesheet" href="css/custom-select.css" />
+    <link rel="stylesheet" href="css/checkboxes.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <!--END FORM CSS-->
+{% endblock %}
+
+{% block navContent %}
+      <nav id="cd-vertical-nav">
+        <ul>
+          <li>
+            <a class="js-scroll-trigger" href="#current" class="page-scroll">
+              <span class="cd-dot"></span>
+              <span class="cd-label">Current Team</span>
+            </a>
+          </li>
+          <li>
+    				<a class="js-scroll-trigger" href="#join" class="page-scroll">
+    					<span class="cd-dot"></span>
+    					<span class="cd-label">Join Team</span>
+    				</a>
+    			</li>
+        </ul>
+      </nav>
+{% endblock %}
+
+{% block content %}
+      <main>
+        <div class="slider-container single_image team-header">
+          <div class="slider">
+            <div class="slide slide-0 active">
+              <div class="slide__bg"></div>
+              <div class="slide__content">
+                <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                  <path class="slide__overlay-path" d="M0,0 95,0 400,405 0,405" />
+                </svg>
+                <div class="slide__text">
+                  <h2 class="slide__text-heading">Our Team</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="current" class="main-section section-purple">
+          <h2><span class="special-first-letter">C</span>urrent Team</h2>
+          <p>
+            <i>The Ones Behind This Great Organization</i>
+          </p>
+          <hr>
+          <div class="members">
+            <div class="member-container">
+              <img class="member-image" src="img/face1.png" alt="Picture of our Projects Manager"/>
+              <ul class="member-social-icon-container">
+                <li>
+                  <span class="fa-stack">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <a href="https://www.facebook.com/Jonathan-Stoke-2009801399243626/" class="member-social-icon flaticon-facebook-logo"></a>
+                  </span>
+                </li>
+                <li>
+                  <span class="fa-stack">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <a href="https://www.linkedin.com/in/jonathan-stoke-3490b615b/" class="member-social-icon flaticon-linkedin-logo"></a>
+                  </span>
+                </li>
+                <li>
+                  <span class="fa-stack">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <a href="mailto:jonathan@ccconnections.info" class="member-contact-icon flaticon-email"></a>
+                  </span>
+                </li>
+              </ul>
+              <div class="member-text">
+                <h1 class="member-title">Projects Manager</h1>
+                <p class="member-descr">
+                  Jonathan joined our team in the fall of 2014 and has grown into the role of Project Manager. He organizes everything from the Big Ideas of to the nitty-gritties of logistics on our most important missions.
+                </p>
+              </div>
+            </div>
+            <div class="member-container">
+              <img class="member-image" src="img/face2.png" alt="Picture of our Organization President"/>
+              <ul class="member-social-icon-container">
+                <li>
+                  <span class="fa-stack">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <a href="https://www.facebook.com/Jacob-Kent-1011757572331210/" class="member-social-icon flaticon-facebook-logo"></a>
+                  </span>
+                </li>
+                <li>
+                  <span class="fa-stack">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <a href="https://www.linkedin.com/in/jacob-kent-2750b415b/" class="member-social-icon flaticon-linkedin-logo"></a>
+                  </span>
+                </li>
+                <li>
+                  <span class="fa-stack">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <a href="mailto:jacob@ccconnections.info" class="member-contact-icon flaticon-email"></a>
+                  </span>
+                </li>
+              </ul>
+              <div class="member-text">
+                <h1 class="member-title">President</h1>
+                <p class="member-descr">
+                  Community Clothing Connections was the brainchild of our president, Jacob. Seeing a need in the community for a charitable organization, he founded the company and has been its leader ever since.
+                </p>
+              </div>
+            </div>
+            <div class="member-container">
+              <img class="member-image" src="img/face3.png" alt="Picture of our Organization Vice President"/>
+              <ul class="member-social-icon-container">
+                <li>
+                  <span class="fa-stack">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <a href="https://www.facebook.com/Josephine-Ogden-188831298385639/" class="member-social-icon flaticon-facebook-logo"></a>
+                  </span>
+                </li>
+                <li>
+                  <span class="fa-stack">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <a href="https://www.linkedin.com/in/josephine-ogden-3b90b515b/" class="member-social-icon flaticon-linkedin-logo"></a>
+                  </span>
+                </li>
+                <li>
+                  <span class="fa-stack">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <a href="mailto:josephin@ccconnections.info" class="member-contact-icon flaticon-email"></a>
+                  </span>
+                </li>
+              </ul>
+              <div class="member-text">
+                <h1 class="member-title">Vice President</h1>
+                <p class="member-descr">
+                  Our business couldn’t run smoothly without the help of our Vice President, Josephine. Since 2009, she has been our middle-woman, the connection between the ideas we hope to achieve and the things we do to get there.
+                </p>
+              </div>
+            </div>
+            <div class="member-container">
+              <img class="member-image" src="img/face4.png" alt="Picture of our Treasurer"/>
+              <ul class="member-social-icon-container">
+                <li>
+                  <span class="fa-stack">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <a href="https://www.facebook.com/Joey-Schlip-410670779386330/" class="member-social-icon flaticon-facebook-logo"></a>
+                  </span>
+                </li>
+                <li>
+                  <span class="fa-stack">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <a href="https://www.linkedin.com/in/joey-schlip-36a0b415b/" class="member-social-icon flaticon-linkedin-logo"></a>
+                  </span>
+                </li>
+                <li>
+                  <span class="fa-stack">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <a href="mailto:joey@ccconnections.info" class="member-contact-icon flaticon-email"></a>
+                  </span>
+                </li>
+              </ul>
+              <div class="member-text">
+                <h1 class="member-title">Treasurer</h1>
+                <p class="member-descr">
+                  Joey has been with us since 2013 when we began to expand. We realized the growing burdens of budgeting and expenses coupled with the complications of being a non-profit and reached out to find someone to help. His management of our funds and expenditures has been pivotal to our great success.
+                </p>
+              </div>
+            </div>
+            <div class="member-container">
+              <img class="member-image" src="img/face5.png" alt="Picture of our Personal Relations Manager"/>
+              <ul class="member-social-icon-container">
+                <li>
+                  <span class="fa-stack">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <a href="https://www.facebook.com/Jazmine-Yaeger-936555643192719/" class="member-social-icon flaticon-facebook-logo"></a>
+                  </span>
+                </li>
+                <li>
+                  <span class="fa-stack">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <a href="https://www.linkedin.com/in/jazmine-yaeger-8610b515b/" class="member-social-icon flaticon-linkedin-logo"></a>
+                  </span>
+                </li>
+                <li>
+                  <span class="fa-stack">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <a href="mailto:jazmine@ccconnections.info" class="member-contact-icon flaticon-email"></a>
+                  </span>
+                </li>
+              </ul>
+              <div class="member-text">
+                <h1 class="member-title">Personal Relations Manager</h1>
+                <p class="member-descr">
+                  As a charitable organization, our very mission is centered around people. Jazmine serves as the face of our organization to the community, talking with, presenting to, and making connections with the people we serve since 2011.
+                </p>
+              </div>
+            </div>
+            <div class="member-container">
+              <img class="member-image" src="img/face6.png" alt="Picture of our Store Sales Manager"/>
+              <ul class="member-social-icon-container">
+                <li>
+                  <span class="fa-stack">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <a href="https://www.facebook.com/Jessie-Hill-1982714491992083/" class="member-social-icon flaticon-facebook-logo"></a>
+                  </span>
+                </li>
+                <li>
+                  <span class="fa-stack">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <a href="https://www.linkedin.com/in/jessie-hill-3410b415b/" class="member-social-icon flaticon-linkedin-logo"></a>
+                  </span>
+                </li>
+                <li>
+                  <span class="fa-stack">
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <a href="mailto:jessie@ccconnections.info" class="member-contact-icon flaticon-email"></a>
+                  </span>
+                </li>
+              </ul>
+              <div class="member-text">
+                <h1 class="member-title">Store Sales Manager</h1>
+                <p class="member-descr">
+                  We have been blessed by an incredibly generous community, which has led to a giant inventory. We hired Jessie back in 2009 after we reached our landmark in donations and she has monitored our clothing stock and donations ever since.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="join" class="main-section section-white">
+          <h2><span class="special-first-letter">J</span>oin Today</h2>
+          <p>
+            <i>Become a Part of Our Great Team</i>
+          </p>
+          <hr>
+          <div class="join-form-area">
+            <form name="request" action="php/team.php" autocomplete="off" method="POST" class="ac-custom ac-checkbox ac-cross">
+              <fieldset>
+                <legend>
+                  <span class="special-first-letter">C</span>ontact Info
+                </legend>
+                <span class="input input--kaede flexible-input">
+        					<input class="input__field input__field--kaede" type="text" id="fname" name="fname" required />
+        					<label class="input__label input__label--kaede" for="fname">
+        						<span class="input__label-content input__label-content--kaede">*First Name</span>
+        					</label>
+        				</span>
+        				<span class="input input--kaede flexible-input">
+        					<input class="input__field input__field--kaede" type="text" id="lname" name="lname" required />
+        					<label class="input__label input__label--kaede" for="lname">
+        						<span class="input__label-content input__label-content--kaede">*Last Name</span>
+        					</label>
+        				</span>
+        				<span class="input input--kaede">
+        					<input class="input__field input__field--kaede" type="email" id="email" name="email" required />
+        					<label class="input__label input__label--kaede" for="email">
+        						<span class="input__label-content input__label-content--kaede">*Email Address</span>
+        					</label>
+        				</span>
+                <span class="input input--kaede flexible-input">
+        					<input class="input__field input__field--kaede" type="text" id="adr-1" name="adr-1" />
+        					<label class="input__label input__label--kaede" for="adr-1">
+        						<span class="input__label-content input__label-content--kaede">Address Line 1</span>
+        					</label>
+        				</span>
+                <span class="input input--kaede flexible-input">
+        					<input class="input__field input__field--kaede" type="text" id="adr-2" name="adr-2" />
+        					<label class="input__label input__label--kaede" for="adr-2">
+        						<span class="input__label-content input__label-content--kaede">Address Line 2</span>
+        					</label>
+        				</span>
+                <span class="input input--kaede flexible-input">
+        					<input class="input__field input__field--kaede" type="text" id="city" name="city" />
+        					<label class="input__label input__label--kaede" for="city">
+        						<span class="input__label-content input__label-content--kaede">City</span>
+        					</label>
+        				</span>
+                <span class="input input--kaede flexible-input">
+        					<input class="input__field input__field--kaede" type="text" id="state" name="state" />
+        					<label class="input__label input__label--kaede" for="state">
+        						<span class="input__label-content input__label-content--kaede">State/Province/Region</span>
+        					</label>
+        				</span>
+                <span class="input input--kaede flexible-input">
+        					<input class="input__field input__field--kaede" type="text" id="zip" name="zip" />
+        					<label class="input__label input__label--kaede" for="zip">
+        						<span class="input__label-content input__label-content--kaede">ZIP</span>
+        					</label>
+        				</span>
+                <span class="input input--kaede flexible-input">
+        					<input class="input__field input__field--kaede" type="text" id="country" name="country" />
+        					<label class="input__label input__label--kaede" for="country">
+        						<span class="input__label-content input__label-content--kaede">Country</span>
+        					</label>
+        				</span>
+                <span class="input input--kaede flexible-input">
+        					<input class="input__field input__field--kaede" type="text" id="phone" name="phone" required />
+        					<label class="input__label input__label--kaede" for="phone">
+        						<span class="input__label-content input__label-content--kaede">*Phone Number</span>
+        					</label>
+        				</span>
+                <ul>
+      						<li class="anim-checkbox"><input id="cb1" name="cb1" type="checkbox"><label for="cb1">Receive email updates about new events?</label></li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  <span class="special-first-letter">M</span>embership & Availability
+                </legend>
+                <select id="cd-dropdown" class="cd-select" required>
+                  <option value="1" selected>Prospective Member</option>
+                  <option value="2">Full-Time Member</option>
+                  <option value="3">Recurring Volunteer</option>
+                  <option value="4">Occasional Volunteer</option>
+                </select>
+                <div class="docs-datepicker">
+                  <div class="input-group">
+                    <input type="text" class="form-control docs-date" name="startdate" placeholder="*Availability Start Date" required>
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default docs-datepicker-trigger" disabled>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                      </button>
+                    </span>
+                  </div>
+                  <div class="docs-datepicker-container"></div>
+                </div>
+                <div class="docs-datepicker">
+                  <div class="input-group">
+                    <input type="text" class="form-control docs-date" name="enddate" placeholder="*Availability End Date" required>
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default docs-datepicker-trigger" disabled>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                      </button>
+                    </span>
+                  </div>
+                  <div class="docs-datepicker-container"></div>
+                </div>
+              </fieldset>
+              <button class="button button--rayen button--border-medium button--text-thick button--text-upper button--size-s" data-text="Submit Request"><span>Submit Request</span></button>
+              <button type="reset" class="button button--rayen button--border-medium button--text-thick button--text-upper button--size-s" data-text="Reset Form"><span>Reset Form</span></button>
+            </form>
+          </div>
+        </div>
+      </main>
+{% endblock %}
+
+{% block script %}
+{{ super() }}
+    <script type="text/javascript" src="js/jquery.dropdown.js"></script>
+    <script src="js/svgcheckbx.js"></script>
+    <script type="text/javascript">
+
+      $( function() {
+
+        $( '#cd-dropdown' ).dropdown();
+
+      });
+
+    </script>
+
+    <script>
+			(function() {
+				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+				if (!String.prototype.trim) {
+					(function() {
+						// Make sure we trim BOM and NBSP
+						var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+						String.prototype.trim = function() {
+							return this.replace(rtrim, '');
+						};
+					})();
+				}
+
+				[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+					// in case the input is already filled..
+					if( inputEl.value.trim() !== '' ) {
+						classie.add( inputEl.parentNode, 'input--filled' );
+					}
+
+					// events:
+					inputEl.addEventListener( 'focus', onInputFocus );
+					inputEl.addEventListener( 'blur', onInputBlur );
+				} );
+
+				function onInputFocus( ev ) {
+					classie.add( ev.target.parentNode, 'input--filled' );
+				}
+
+				function onInputBlur( ev ) {
+					if( ev.target.value.trim() === '' ) {
+						classie.remove( ev.target.parentNode, 'input--filled' );
+					}
+				}
+			})();
+		</script>
+
+    <script src="js/datepicker.js"></script>
+    <script src="js/main.js"></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js'></script>
+    <script  src="js/input-mask.js"></script>
+{% endblock %}

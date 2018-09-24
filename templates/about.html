@@ -1,0 +1,247 @@
+{% extends '/_base_template/base_layout.html' %}
+{% block title %}About{% endblock %}
+
+{% block extraStuff %}
+    <!--FULLSCREEN SLIDER CSS-->
+    <link rel="stylesheet" href="css/slider-style.css" />
+    <!--END FULLSCREEN SLIDER CSS -->
+{% endblock %}
+
+{% block navContent %}
+      <nav id="cd-vertical-nav">
+        <ul>
+          <li>
+            <a class="js-scroll-trigger" href="#mission" class="page-scroll">
+              <span class="cd-dot"></span>
+              <span class="cd-label">Mission & Vision</span>
+            </a>
+          </li>
+          <li>
+    				<a class="js-scroll-trigger" href="#values" class="page-scroll">
+    					<span class="cd-dot"></span>
+    					<span class="cd-label">Values</span>
+    				</a>
+    			</li>
+          <li>
+    				<a class="js-scroll-trigger" href="#hours" class="page-scroll">
+    					<span class="cd-dot"></span>
+    					<span class="cd-label">Hours</span>
+    				</a>
+    			</li>
+          <li>
+    				<a class="js-scroll-trigger" href="#locations" class="page-scroll">
+    					<span class="cd-dot"></span>
+    					<span class="cd-label">Locations</span>
+    				</a>
+    			</li>
+        </ul>
+      </nav>
+{% endblock %}
+
+{% block content %}
+      <main>
+        <div class="slider-container single_image about-header">
+          <div class="slider">
+            <div class="slide slide-0 active">
+              <div class="slide__bg"></div>
+              <div class="slide__content">
+                <svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+                  <path class="slide__overlay-path" d="M0,0 95,0 400,405 0,405" />
+                </svg>
+                <video id="video">
+                  <source src="./img/about-video.webm" type="video/webm"/>
+                </video>
+                <button id="play" onclick="$('#video').get(0).paused ? $('#video').get(0).play() : $('#video').get(0).pause();" title="play"><span>Play</span></button>
+                <div class="slide__text">
+                  <h2 class="slide__text-heading">Our Business</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="split-section">
+          <div id="mission" class="main-section section-purple">
+            <h2><span class="special-first-letter">M</span>ission</h2>
+            <p>
+              <i>The Message That Got Us Started</i>
+            </p>
+            <hr>
+            <div class="infographic dots flaticon-four-dots">
+              <p class="infographic-text">
+                We strive to bring communities closer together by fostering in our donors a greater connection to those in need in their community. Every event we hold and donation we receive is driven towards more connected communities as our donors help rid the less fortunate of their worries of an essential thing like clothing.
+              </p>
+            </div>
+          </div>
+          <div id="vision" class="main-section section-yellow">
+            <h2><span class="special-first-letter">V</span>ision</h2>
+            <p>
+              <i>What We Aspire To Be</i>
+            </p>
+            <hr>
+            <div class="infographic dots flaticon-four-dots">
+              <p class="infographic-text">
+                Our vision, ultimately, is to create communities in which no one has to worry about their essential needs for clothing. On top of this, we hope our presence and influence fosters in our community members the values we uphold, so our ideas and sense of charity become a second nature to everyone who was, and will be, a part of our program.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="values" class="main-section section-blue">
+          <h2><span class="special-first-letter">V</span>alues</h2>
+          <p>
+            <i>The Practices We Hold Closest In Our Business</i>
+          </p>
+          <hr>
+          <div class="about-items">
+            <div class="about-item-container">
+              <div class="about-icon">
+                <i class="other-icons flaticon-like"></i>
+              </div>
+              <div class="about-text">
+                <h2 class="about-item-heading">Volunteerism</h2>
+                <p class="about-item-descr">
+                  As a business that thrives on volunteerism, we could not function without our generous volunteers. It is a strong value that we hold close in our business, and we would not be as successful as we are without it.
+                </p>
+              </div>
+            </div>
+            <div class="about-item-container">
+              <div class="about-icon">
+                <i class="other-icons flaticon-charity"></i>
+              </div>
+              <div class="about-text">
+                <h2 class="about-item-heading">Charity</h2>
+                <p class="about-item-descr">
+                  Our entire organization is based on charity and giving back to the community. We would not be what we are without our generous organizational members, volunteers, and charity incorporated into Community Clothing Connections.
+                </p>
+              </div>
+            </div>
+            <div class="about-item-container">
+              <div class="about-icon">
+                <i class="other-icons flaticon-give-a-gift"></i>
+              </div>
+              <div class="about-text">
+                <h2 class="about-item-heading">Giving</h2>
+                <p class="about-item-descr">
+                  We strive to give as much back to the community as we can, whether that be buying more clothes to donate, improving local buildings, cleaning up the city, or having events with locals.
+                </p>
+              </div>
+            </div>
+            <div class="about-item-container">
+              <div class="about-icon">
+                <i class="other-icons flaticon-msn-messenger-logo"></i>
+              </div>
+              <div class="about-text">
+                <h2 class="about-item-heading">Community</h2>
+                <p class="about-item-descr">
+                  Community is foundational in our business. Without community, none of what we do would be possible. It's such a big part of our business that the word is even in our name. It's who we are.
+                </p>
+              </div>
+            </div>
+            <div class="about-item-container">
+              <div class="about-icon">
+                <i class="other-icons flaticon-speaking-of-love"></i>
+              </div>
+              <div class="about-text">
+                <h2 class="about-item-heading">Honesty</h2>
+                <p class="about-item-descr">
+                  Honesty produces a high degree of integrity within our business. We value people who uphold our mission and are honest in all their practices. With these kinds of people, our business runs as fluidly as possible.
+                </p>
+              </div>
+            </div>
+            <div class="about-item-container">
+              <div class="about-icon">
+                <i class="other-icons flaticon-people"></i>
+              </div>
+              <div class="about-text">
+                <h2 class="about-item-heading">Stewardship</h2>
+                <p class="about-item-descr">
+                  We believe it is our duty to serve and manage the well-being of our community. We are a community servicing organization, and without this value, we would be doing a disservice to its members.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="hours" class="main-section section-white">
+          <h2><span class="special-first-letter">H</span>ours</h2>
+          <p>
+            <i>Come in any time during our posted hours or drop off clothes anytime at our locations</i>
+          </p>
+          <hr>
+          <div class="hours-section">
+            <table class="highlight">
+              <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Break Hour</th>
+                    <th>Hours</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Monday-Thursday</td>
+                  <td>1:00 PM</td>
+                  <td>8:00 AM - 5:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>12:00 PM</td>
+                  <td>9:00 AM - 5:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Saturday</td>
+                  <td>NONE</td>
+                  <td>8:00 AM - 12:00 PM</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>NONE</td>
+                  <td>CLOSED</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div id="locations" class="main-section section-yellow">
+          <h2><span class="special-first-letter">L</span>ocations</h2>
+          <p>
+            <i>So you can easily find our main store or one of our many drop off locations</i>
+          </p>
+          <hr>
+          <div class="location-section">
+            <div id="map"></div>
+            <div class="map-dirs">
+              <h2><span class="special-first-letter">A</span>dresses</h2>
+              <hr>
+              <h2>Main Address</h2>
+              <p>Community Clothing Connections<br>509 East Tenth Street<br>Rolla, MO 65401</p>
+              <h2>Drop Off Locations</h2>
+              <ol>
+                <li>707 N State St., Rolla, MO 65401</li>
+                <li>900 Bulldog Run, Rolla, MO 65401</li>
+                <li>1200 McCutchen Rd, Rolla, MO 65401</li>
+                <li>806 Ridgeview Rd, Rolla, MO 65401</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </main>
+{% endblock %}
+
+{% block script %}
+{{ super() }}
+    <script>
+      function initMap() {
+        var uluru = {lat: 37.949868, lng: -91.775034};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI9R_bzjYSX8tSjpWDWQIXl0i-TTzXgvQ&callback=initMap">
+    </script>
+{% endblock %}
